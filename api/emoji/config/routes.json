@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/emojis",
+      "handler": "emoji.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emojis/count",
+      "handler": "emoji.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emojis/:id",
+      "handler": "emoji.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/emojis",
+      "handler": "emoji.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/emojis/:id",
+      "handler": "emoji.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/emojis/:id",
+      "handler": "emoji.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

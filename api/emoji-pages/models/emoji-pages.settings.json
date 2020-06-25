@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emoji_pages",
+  "info": {
+    "name": "EmojiPages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "EmojiPageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "EmojiPageContent": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

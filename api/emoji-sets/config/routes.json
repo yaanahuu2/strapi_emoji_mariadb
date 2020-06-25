@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/emoji-sets",
+      "handler": "emoji-sets.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emoji-sets/count",
+      "handler": "emoji-sets.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emoji-sets/:id",
+      "handler": "emoji-sets.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/emoji-sets",
+      "handler": "emoji-sets.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/emoji-sets/:id",
+      "handler": "emoji-sets.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/emoji-sets/:id",
+      "handler": "emoji-sets.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

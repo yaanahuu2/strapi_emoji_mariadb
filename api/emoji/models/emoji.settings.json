@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emojis",
+  "info": {
+    "name": "Emoji"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "EmojiName": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "EmojiNameXK": {
+      "type": "richtext"
+    },
+    "EmojiImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "EmojiSounds": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "emoji_set": {
+      "via": "emojis",
+      "model": "emoji-sets"
+    }
+  }
+}

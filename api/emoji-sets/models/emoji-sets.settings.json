@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emoji_sets",
+  "info": {
+    "name": "EmojiSets"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "SetName": {
+      "type": "string",
+      "required": true
+    },
+    "emojis": {
+      "collection": "emoji",
+      "via": "emoji_set"
+    }
+  }
+}

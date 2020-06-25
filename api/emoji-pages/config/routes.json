@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/emoji-pages",
+      "handler": "emoji-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emoji-pages/count",
+      "handler": "emoji-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emoji-pages/:id",
+      "handler": "emoji-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/emoji-pages",
+      "handler": "emoji-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/emoji-pages/:id",
+      "handler": "emoji-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/emoji-pages/:id",
+      "handler": "emoji-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
